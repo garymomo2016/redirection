@@ -13,18 +13,9 @@ body {
 }
 #arrowBody {
 	width: 60%;
-	height: 500px;
 }
 #arrowHead {
 	width:95%;
-}
-
-.actions {
-	text-align: center;
-}
-.actions div {
-	background-color: green;
-	border-radius: 3px;
 }
 
 a, a:link, a:visited, a:hover {
