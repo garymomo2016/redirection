@@ -120,6 +120,35 @@
 			location.replace("https://garymomoindex.github.io/?visit=true");
 		}
 	});
+
+	$(".btn-modal").on("click tap", function() {
+		var htmlIframe1 = '<iframe src="https://www.youtube.com/embed/';
+		var htmlIframe2 = '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+		var htmlIframeSrc = '';
+		var chkId = $(this).attr("id");
+		if (chkId == 'adModala1-1' || chkId == 'adModala2-1') {
+			htmlIframeSrc = 'txDS6spqqV0';
+		} else if (chkId == 'adModala1-2' || chkId == 'adModala2-2') {
+			htmlIframeSrc = 'Jh6B4cPK5YQ';
+		} else if (chkId == 'adModala1-3' || chkId == 'adModala2-3') {
+			htmlIframeSrc = 'NAS1O5ewxY8';
+		} else if (chkId == 'adModala1-4' || chkId == 'adModala2-4') {
+			htmlIframeSrc = 'k1tea6MV_JQ';
+		} else if (chkId == 'adModala1-5') {
+			htmlIframeSrc = 't5vTqUXkh94';
+		} else if (chkId == 'adModala2-5') {
+			htmlIframeSrc = 'uXxM9jnfz2g';
+		} else if (chkId == 'adModala4') {
+			htmlIframeSrc = 'Te9qxDdeaY4';
+		} else if (chkId == 'adModalb3') {
+			htmlIframeSrc = 'oOa2TqOP7lk';
+		}
+		$("#adModal").find("#video-block").append(htmlIframe1 + htmlIframeSrc + htmlIframe2);
+	});
+
+	$("#adModal").on("hide.bs.modal", function() {
+		$(this).find("#video-block").empty();
+	});
 });
 
 $(window).on("load", function() {
