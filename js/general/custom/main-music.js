@@ -142,6 +142,8 @@
 			htmlIframeSrc = 'Te9qxDdeaY4';
 		} else if (chkId == 'adModalb3') {
 			htmlIframeSrc = 'oOa2TqOP7lk';
+		} else if (chkId == 'adModala101') {
+			htmlIframeSrc = '3KpgHOFcWeU';
 		}
 		$("#adModal").find("#video-block").append(htmlIframe1 + htmlIframeSrc + htmlIframe2);
 	});
